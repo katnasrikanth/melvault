@@ -14,48 +14,48 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
-	@Column(name="firstname")
-	private String firstname;
-	@Column(name="lastname")
-	private String lastname;
-	@Column(name="email",length=200)
-	private String email;
+	@Column(name="name")
+	private String name;
+	@Column(name="salary")
+	private Integer salary;
+	@Column(name="age")
+	private Integer age;
 	@Column(name="exp")
 	private Integer exp;
 	
 	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Integer getSalary() {
+		return salary;
+	}
+	public void setSalary(Integer salary) {
+		this.salary = salary;
+	}
+	public Integer getAge() {
+		return age;
+	}
+	public void setAge(Integer age) {
+		this.age = age;
+	}
 	public Integer getExp() {
 		return exp;
 	}
 	public void setExp(Integer exp) {
 		this.exp = exp;
 	}
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public String getFirstname() {
-		return firstname;
-	}
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
-	}
-	public String getLastname() {
-		return lastname;
-	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
 	
 	
 	
-
-}
+	
+	}
