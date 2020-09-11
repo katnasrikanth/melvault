@@ -18,7 +18,11 @@ public class Employee {
 	private String firstname;
 	@Column(name="lastname")
 	private String lastname;
+	@Column(name="email",length=200)
+	private String email;
+	@Column(name="exp")
 	private Integer exp;
+	
 	
 	public Integer getExp() {
 		return exp;
@@ -26,10 +30,6 @@ public class Employee {
 	public void setExp(Integer exp) {
 		this.exp = exp;
 	}
-	@Column(name="email",length=200)
-	private String email;
-	
-	
 	public Long getId() {
 		return id;
 	}
